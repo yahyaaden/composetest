@@ -19,7 +19,7 @@ def get_hit_count():
 
 @app.route('/')
 def hello():
-    return 'Welcome my friend! To navigate this ugly page press <a href="http://localhost:8000/hit">hit!</a> and <a href="http://localhost:8000/html">html!</a>'
+    return 'Welcome my friend! To navigate this ugly page press <a href="/hit">hit!</a> and <a href="/html">html!</a>'
 
 @app.route('/hit')
 def hit():

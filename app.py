@@ -19,12 +19,12 @@ def get_hit_count():
 
 @app.route('/')
 def hello():
-    return 'Welcome my friend! To navigate this ugly page press <a href="/hit">hit!</a> and <a href="/html">html!</a>'
+    return '<b>Welcome my friend! To navigate this ugly page press <a href="/hit">HIT!</a> and <a href="/html">HTML!</a></b>'
 
 @app.route('/hit')
 def hit():
     count = get_hit_count()
-    return 'Hey! This page has been {} times.\n'.format(count)
+    return '<b>Hey! This page has been seen {} times.</b>\n'.format(count)
 
 @app.route('/html/')
 @app.route('/html/<name>')

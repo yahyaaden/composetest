@@ -27,7 +27,8 @@ def hit():
     return 'Hey! This page has been {} times.\n'.format(count)
 
 @app.route('/html/')
-def html():
-    return render_template('generatestub.html')
+@app.route('/html/<name>')
+def html(name = None):
+    return render_template('generatestub.html', name = name)
 
 
